@@ -11,7 +11,12 @@
         "qiniu/php-sdk": "^7.0",
         "guzzlehttp/guzzle": "^6.0",
         "barryvdh/laravel-debugbar": "^2.0",
-        "mews/captcha": "^2.0"
+        "mews/captcha": "^2.0",
+        "barryvdh/laravel-ide-helper": "^2.2",
+        "zizaco/entrust": "5.2.x-dev",
+        "shift31/laravel-elasticsearch": "~1.0",
+        "torann/geoip": "^1.0",
+        "simplesoftwareio/simple-qrcode": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

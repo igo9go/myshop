@@ -169,6 +169,14 @@ return [
          * Package Service Providers...
          */
 
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Zizaco\Entrust\EntrustServiceProvider::class,
+        Torann\GeoIP\GeoIPServiceProvider::class,
+        SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
+        Shift31\LaravelElasticsearch\ElasticsearchServiceProvider::class,  // 5.x
+        Mews\Captcha\CaptchaServiceProvider::class,
+
+
         //
 
         /*
@@ -179,6 +187,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+
+
 
     ],
 
@@ -227,6 +238,12 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        'Entrust'    => Zizaco\Entrust\EntrustFacade::class,
+        'GeoIP' => Torann\GeoIP\GeoIPFacade::class,
+        'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
+        'Shift31'   => Shift31\LaravelElasticsearch\ElasticsearchServiceProvider::class,
+        'Captcha'   => Mews\Captcha\Facades\Captcha::class,
 
     ],
 
